@@ -25,7 +25,7 @@ namespace NestedObjects
 
             s.AssignedAdvisor.FullName = "Annemarie Solbrack";
             s.AssignedAdvisor.Email = "Annemarie@cptc.edu";
-            MessageBox.Show($"Hey {s.Name}\nYour asvisor is " + $"{s.AssignedAdvisor.FullName}");
+            MessageBox.Show($"Hey {s.Name}\nYour advisor is " + $"{s.AssignedAdvisor.FullName}");
         }
     }
 }
