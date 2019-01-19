@@ -8,5 +8,15 @@ namespace NestedObjects
 {
     class Student
     {
+        /// <summary>
+        /// The full name of the student
+        /// (First MiddleInitial Last)
+        /// </summary>
+        
+        public string Name { get; set; }
+
+        public DateTime? DateOfBirth { get; set; }
+
+        public Advisor AssignedAdvisor { get; set; }
     }
 }
