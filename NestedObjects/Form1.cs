@@ -16,5 +16,16 @@ namespace NestedObjects
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            Student s = new Student();
+            s.Name = "J. Doe";
+            s.DateOfBirth = new DateTime(1980, 1, 1);
+
+            s.AssignedAdvisor.FullName = "Annemarie Solbrack";
+            s.AssignedAdvisor.Email = "Annemarie@cptc.edu";
+            MessageBox.Show($"Hey {s.Name}\nYour asvisor is " + $"{s.AssignedAdvisor.FullName}");
+        }
     }
 }
