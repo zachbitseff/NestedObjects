@@ -8,6 +8,11 @@ namespace NestedObjects
 {
     class Student
     {
+        public Student()
+        {
+            AssignedAdvisor = new Advisor();
+        }
+
         /// <summary>
         /// The full name of the student
         /// (First MiddleInitial Last)
